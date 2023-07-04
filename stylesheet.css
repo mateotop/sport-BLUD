@@ -57,6 +57,8 @@ h1+h2 {
     /* height: 120px; */
     /* You may want to adjust these dimensions */
     border: 1px solid #ddd;
+    margin: 0;
+    padding-top: 5px;
     margin-right: 10px;
     border-radius: 5px;
 
@@ -65,7 +67,12 @@ h1+h2 {
 }
 
 .exercise-preview p {
-    display: inline;
+    display: flex;
+    margin: 0;
+    /* margin-bottom: 5px; */
+    align-items: center;
+    justify-content: center;
+
 }
 
 /* .exercise-preview:hover .tooltip {

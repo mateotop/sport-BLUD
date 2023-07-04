@@ -42,7 +42,10 @@ function createExerciseCarousel() {
         const title = document.createElement('p');
         title.textContent = exercise.title;
 
-        exercisePreview.append(img, title);
+        const duration = document.createElement('p');
+        duration.textContent = exercise.duration + `s`;
+
+        exercisePreview.append(img, title, duration);
         carousel.appendChild(exercisePreview);
     });
 }
