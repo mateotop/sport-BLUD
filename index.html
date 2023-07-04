@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+    <select id="lang" class="list-lang">
+        <option value="ru">Русский</option>
+        <option value="en">English</option>
+        <!-- Add more languages if needed -->
+        </select>
+  <div class="exercise-card">
+    <h1 id="title"></h1>
+    <h2 id="subtitle"></h2>
+    <h2 id="order"></h2>
+    <div id="exercise-carousel-container">
+        <div id="exercise-carousel">
+          <!-- exercises will be appended here by JavaScript -->
+        </div>
+      </div>      
+    <div class="exercise-img">
+      <img id="image" src="">
+      <span class="info-icon fas fa-info-circle info-icon"></span>
+      <div id="tooltip" class="tooltip">Exercise Description</div>
+    </div>
+    <div id="timer">
+      <svg id="countdownCircle" viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="45"></circle>
+      </svg>
+      <div id="countdown"></div>
+    </div>
+    <button id="pause-play-btn"><i class="fas fa-play"></i></button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
